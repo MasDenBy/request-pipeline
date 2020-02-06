@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasDen.Request.Pipeline", "MasDen.Request.Pipeline\MasDen.Request.Pipeline.csproj", "{0E05FBF2-15EA-4658-ACE7-2500920AB317}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{85B665EC-77B3-456A-9601-91FE685FF6AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasDen.Request.Pipeline.Test", "tests\MasDen.Request.Pipeline.Test\MasDen.Request.Pipeline.Test.csproj", "{BA0A8907-167A-40AF-A45F-29121D765BC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E05FBF2-15EA-4658-ACE7-2500920AB317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E05FBF2-15EA-4658-ACE7-2500920AB317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E05FBF2-15EA-4658-ACE7-2500920AB317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E05FBF2-15EA-4658-ACE7-2500920AB317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0A8907-167A-40AF-A45F-29121D765BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0A8907-167A-40AF-A45F-29121D765BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0A8907-167A-40AF-A45F-29121D765BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0A8907-167A-40AF-A45F-29121D765BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA0A8907-167A-40AF-A45F-29121D765BC7} = {85B665EC-77B3-456A-9601-91FE685FF6AC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D6564DC-320B-49CF-B04E-E95CA2D1726A}
+	EndGlobalSection
+EndGlobal
