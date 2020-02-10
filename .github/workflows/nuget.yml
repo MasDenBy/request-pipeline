@@ -23,8 +23,6 @@ jobs:
       run: dotnet test src/MasDen.Request.Pipeline.sln --collect:"XPlat Code Coverage" --settings .runsettings
 
     - name: Publish NuGet
-      uses: rohith/publish-nuget@v2.0.0
-      with:
-        PROJECT_FILE_PATH: src/MasDen.Request.Pipeline/MasDen.Request.Pipeline.csproj
-        VERSION_FILE_PATH: Directory.Build.props
-        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+      run: |
+        dotnet pack src/MasDen.Request.Pipeline/MasDen.Request.Pipeline.csproj -o Packages
+        dotnet nuget push Packages/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json

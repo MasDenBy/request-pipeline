@@ -1,8 +1,0 @@
-<Project>
-  <PropertyGroup>
-    <Version>1.0.0</Version>
-    <Product>MasDen.Request.Pipeline</Product>
-    <Company>MasDen</Company>
-    <NeutralLanguage>en</NeutralLanguage>
-  </PropertyGroup>
-</Project>
