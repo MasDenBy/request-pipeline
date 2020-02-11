@@ -1,2 +1,2 @@
 # request-pipeline
-The small core implementation of CQRS
+The small implementation of request pipeline.
