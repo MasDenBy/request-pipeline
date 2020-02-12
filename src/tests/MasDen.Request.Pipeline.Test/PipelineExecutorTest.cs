@@ -62,10 +62,10 @@ namespace MasDen.Request.Pipeline.Test
 			await this.pipelineExecutor.ExecuteAsync<TestRequest, object>(new TestRequest());
 
 			// Assert
-			await pipeline.RequestHandler.Received().ExecuteAsync(Arg.Any<RequestContext<TestRequest, object>>());
-			pipeline.PreRequestHandlers.ToList().ForEach(x => x.Received().ExecuteAsync(Arg.Any<RequestContext<TestRequest, object>>()));
-			pipeline.PostRequestHandlers.ToList().ForEach(x => x.Received().ExecuteAsync(Arg.Any<RequestContext<TestRequest, object>>()));
-			pipeline.FinishRequestHandlers.ToList().ForEach(x => x.Received().ExecuteAsync(Arg.Any<RequestContext<TestRequest, object>>()));
+			await pipeline.RequestHandler.Received().Handle(Arg.Any<RequestContext<TestRequest, object>>());
+			pipeline.PreRequestHandlers.ToList().ForEach(x => x.Received().Handle(Arg.Any<RequestContext<TestRequest, object>>()));
+			pipeline.PostRequestHandlers.ToList().ForEach(x => x.Received().Handle(Arg.Any<RequestContext<TestRequest, object>>()));
+			pipeline.FinishRequestHandlers.ToList().ForEach(x => x.Received().Handle(Arg.Any<RequestContext<TestRequest, object>>()));
 		}
 
 		#endregion

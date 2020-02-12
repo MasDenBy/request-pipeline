@@ -63,7 +63,7 @@ namespace MasDen.Request.Pipeline
 			{
 				foreach (var handler in requestHandlers)
 				{
-					var result = await handler.ExecuteAsync(requestContext);
+					var result = await handler.Handle(requestContext);
 					requestContext = new RequestContext<TRequest, TResult>(requestContext.Request, result);
 				}
 			}

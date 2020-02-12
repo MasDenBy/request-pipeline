@@ -5,6 +5,6 @@ namespace MasDen.Request.Pipeline
 	public interface IRequestHandler<TRequest, TResult>
 		where TRequest : IRequest<TResult>
 	{
-		Task<TResult> ExecuteAsync(RequestContext<TRequest, TResult> requestContext);
+		Task<TResult> Handle(RequestContext<TRequest, TResult> requestContext);
 	}
 }
